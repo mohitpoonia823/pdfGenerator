@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .container{ */
+/* 	width:80%; */
+/* 	margin:auto; */
+/* } */
+/* styling header  */
+.header {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  /* float: left; */
+}
+
+.header-text {
+  text-align: right;
+}
+
+.header-text span {
+  font-weight: 100;
+}
+
+/* styling order details  */
+#order-detail {
+/*   display: flex; */
+/*   flex-direction: row; */
+/*   flex-wrap: nowrap; */
+/*   justify-content: space-around; */
+  padding: 20px;
+  width:100%;
+height:auto;
+margin-bottom:200px;
+}
+
+@media print  {
+  #order-detail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: red;
+  
+  }
+}
+
+.detail-left {
+  margin: 10px;
+  width: 30%;
+  float:left;
+}
+.detail-right{
+	width:60%;
+	float:right;
+	
+}
+
+.detail-left h3 {
+  margin-bottom: 20px;
+}
+
+.detail-left p {
+  color: gray;
+}
+
+.rep-info,
+.buyer-info,
+.order-info {
+  margin: 10px;
+
+}
+
+.detail-right table {
+  color: gray;
+  /* text-align: right; */
+}
+
+.detail-right span {
+  margin-left: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color: black;
+}
+#order-detail table{
+  width: 100%;
+}
+#order-detail table td{
+  text-align: left;
+}
+/* #order-detail table tr{ */
+/* } */
+
+/* stying table  */
+#table-section table {
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+}
+
+#table-section table th {
+  background-color: black;
+  color: white;
+  padding: 5px;
+
+}
+
+#table-section table td {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 2px solid gray;
+}
+@page {
+  size: A4;
+}
